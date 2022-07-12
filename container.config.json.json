@@ -1,0 +1,26 @@
+{
+  "containerPort": 80,
+  "minNum": 0,
+  "maxNum": 5,
+  "cpu": 1,
+  "mem": 1,
+  "policyType": "cpu",
+  "policyThreshold": 50,
+  "policyDetails": [
+    {
+      "PolicyType": "cpu",
+      "PolicyThreshold": 70
+    },
+    {
+      "PolicyType": "mem",
+      "PolicyThreshold": 70
+    }
+  ],
+  "envParams": {},
+  "customLogs": "stdout",
+  "dataBaseName":"test_db",
+  "executeSQLs":[
+    "CREATE DATABASE IF NOT EXISTS test_db;",
+    "USE test_db;"
+  ]
+}
